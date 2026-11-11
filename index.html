@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#3B0F7A">
-<meta name="description" content="Система онлайн-продвижения под ключ: семантика, сайт с SEO и GEO, статьи, соцсети — сразу на 7 площадок, автоматически 24/7. 100 000 ₽ разово.">
-<title>Вот что вы получаете — продвижение под ключ</title>
+<meta name="description" content="Вас будут советовать Яндекс, ChatGPT и даже Алиса на кухне. Система продвижения работает за вас 24/7: клиенты приходят сами, без вашего участия.">
+<title>Вас будут советовать Яндекс, ChatGPT и Алиса на кухне</title>
 <style>
   @font-face { font-family: Onest; src: url("fonts/Onest.ttf") format("truetype"); font-weight: 100 900; font-style: normal; font-display: swap; }
   @font-face { font-family: Golos; src: url("fonts/GolosText.ttf") format("truetype"); font-weight: 100 900; font-style: normal; font-display: swap; }
@@ -61,7 +61,7 @@
       radial-gradient(900px 600px at -10% 80%, rgba(20,212,176,.25), transparent 50%),
       linear-gradient(160deg, #16083a 0%, #3b0f7a 38%, #c41e6c 74%, #ff6a2a 100%);
     color: #fff;
-    padding: 28px 0 36px;
+    padding: 36px 0 44px;
     overflow: hidden;
     position: relative;
   }
@@ -72,23 +72,43 @@
     background: radial-gradient(circle, rgba(255,225,74,.4), transparent 70%);
     pointer-events: none;
   }
-  .hero .kicker { color: var(--yellow); }
-  .hero h1 { color: #fff; max-width: 16em; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 28px 40px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 { color: #fff; max-width: 15em; font-size: clamp(28px, 5.2vw, 48px); margin: 0 0 .35em; }
   .hero .lead {
     font-size: clamp(17px, 2.2vw, 21px);
-    max-width: 34em;
-    margin: 0 0 28px;
+    max-width: 28em;
+    margin: 0 0 22px;
     color: rgba(255,255,255,.92);
   }
-  .gets { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .hero-cta-label {
+    font-family: Onest, sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0 0 10px;
+    color: rgba(255,255,255,.95);
+  }
+  .hero-visual { position: relative; z-index: 1; }
+  .hero-visual img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    background: #fff;
+  }
+  .gets { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 10px; }
   .gets li {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 14px 16px;
     align-items: start;
-    background: rgba(255,255,255,.1);
-    border: 1px solid rgba(255,255,255,.16);
-    backdrop-filter: blur(8px);
+    background: #fff;
+    border: 1px solid var(--line);
     border-radius: 18px;
     padding: 12px 16px 12px 12px;
   }
@@ -97,13 +117,14 @@
     font-weight: 800;
     font-size: clamp(34px, 6vw, 48px);
     line-height: .9;
-    color: var(--yellow);
+    color: var(--violet);
     min-width: 1.2em;
     text-align: center;
     padding-top: 2px;
   }
-  .gets h3 { color: #fff; margin: 0 0 2px; font-size: clamp(18px, 2.4vw, 22px); }
-  .gets p { margin: 0; color: rgba(255,255,255,.88); font-size: 15.5px; }
+  .gets h3 { color: var(--ink); margin: 0 0 2px; font-size: clamp(18px, 2.4vw, 22px); }
+  .gets p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .gets-section { padding: 36px 0 16px; }
   .auto {
     margin-top: 16px;
     background: var(--yellow);
@@ -200,6 +221,7 @@
   .wow h2 { color: #fff; }
   .wow p { margin: 0 0 .7em; color: rgba(255,255,255,.92); font-size: 18px; }
   .wow img { border-radius: 20px; box-shadow: 0 16px 40px rgba(0,0,0,.28); }
+  .wow-text { grid-template-columns: 1fr; }
   .wow .punch {
     display: inline-block;
     background: var(--yellow);
@@ -403,7 +425,7 @@
   .contact-box .hint { color: rgba(255,255,255,.75); font-size: 15px; margin-top: 8px; }
 
   @media screen and (max-width: 820px) {
-    .feat, .feat.reverse, .wow, .proofs, .platforms, .plans, .scale { grid-template-columns: 1fr; direction: ltr; }
+    .feat, .feat.reverse, .wow, .proofs, .platforms, .plans, .scale, .hero-grid { grid-template-columns: 1fr; direction: ltr; }
     .scale { text-align: left; }
     .wow { padding: 20px; }
     section.block, #cases { padding: 40px 0; }
@@ -420,13 +442,15 @@
   @media print {
     body { background: #fff; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; font-size: 9.8pt; }
     .sticky { display: none !important; }
-    .hero-cta { display: none !important; }
-    section.help-wrap, section.fit-wrap { padding: 4mm 0; }
+    section.help-wrap, section.fit-wrap, section.gets-section { padding: 4mm 0; }
+    .hero-grid { grid-template-columns: 1.15fr .85fr !important; gap: 12px 16px; }
+    .hero-visual img { max-height: 52mm; object-fit: cover; object-position: center; }
+    .hero-cta-label { font-size: 10pt; }
     .help, .fit, .contact-box { break-inside: avoid; padding: 12px 14px; }
     .wrap { width: auto; margin: 0; }
-    .hero { padding: 6mm 8mm; border-radius: 12px; }
-    .hero h1 { font-size: 22pt; }
-    .hero .lead { font-size: 10pt; margin-bottom: 8px; }
+    .hero { padding: 8mm; border-radius: 12px; }
+    .hero h1 { font-size: 18pt; max-width: none; }
+    .hero .lead { font-size: 11pt; margin-bottom: 8px; }
     .gets { gap: 4px; }
     .gets li { padding: 5px 10px; border-radius: 10px; }
     .gets .n { font-size: 18pt; }
@@ -436,6 +460,7 @@
     section.block, section.wow-wrap, #cases, #price { padding: 4.5mm 0; }
     h2 { font-size: 16pt; }
     h3 { font-size: 11.5pt; }
+    .wow-text { grid-template-columns: 1fr !important; }
     .feat, .wow, .proofs, .platforms, .plans {
       grid-template-columns: 1fr 1fr !important;
       direction: ltr !important;
@@ -478,10 +503,36 @@
 <body>
 
 <header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Вас будут советовать Яндекс, ChatGPT и даже Алиса на кухне</h1>
+      <p class="lead">Система продвижения работает за вас 24/7. Клиенты приходят сами&nbsp;— без вашего участия.</p>
+      <p class="hero-cta-label">Связаться и обсудить ваш бизнес</p>
+      <div class="btn-row hero-cta">
+        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram · @daymeta</a>
+        <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp · +7 983 410-79-35</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="img/alice-kitchen.jpg" alt="Утро на кухне: умная колонка рекомендует ваш бизнес">
+    </div>
+  </div>
+</header>
+
+<section class="help-wrap" id="help">
   <div class="wrap">
-    <p class="kicker">Коммерческое предложение</p>
-    <h1>1, 2, 3, 4, 5, 6&nbsp;— вот что вы получаете</h1>
-    <p class="lead">Система онлайн-продвижения под ключ для бизнеса, эксперта или онлайн-услуги.</p>
+    <article class="help">
+      <p class="kicker">Сильное преимущество · доступно каждому</p>
+      <h2>Я лично созвонюсь, помогу всё установить и оплатить, настрою и покажу, как вы сможете работать самостоятельно</h2>
+      <p>Не нужно разбираться в сервисах в одиночку. Я провожу вас за руку: звонок, установка, оплата, настройка и показ, как вести систему дальше самим.</p>
+    </article>
+  </div>
+</section>
+
+<section class="gets-section" id="gets">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--magenta)">Что входит</p>
+    <h2>Вот что вы получаете</h2>
     <ol class="gets">
       <li>
         <div class="n">1</div>
@@ -494,7 +545,7 @@
         <div class="n">2</div>
         <div>
           <h3>Сайт с SEO + GEO</h3>
-          <p>Сделаем или переделаем сайт, чтобы вас находили в поиске и рекомендовали ChatGPT, Алиса и DeepSeek.</p>
+          <p>Сделаем или переделаем сайт под поиск и под ответы нейросетей.</p>
         </div>
       </li>
       <li>
@@ -526,18 +577,6 @@
         </div>
       </li>
     </ol>
-    <div class="auto">⚡ И всё это работает автоматически 24/7</div>
-    <p class="hero-cta"><a class="btn" href="#contact">Связаться и обсудить ваш бизнес</a></p>
-  </div>
-</header>
-
-<section class="help-wrap" id="help">
-  <div class="wrap">
-    <article class="help">
-      <p class="kicker">Сильное преимущество · доступно каждому</p>
-      <h2>Я лично созвонюсь, помогу всё установить и оплатить, настрою и покажу, как вы сможете работать самостоятельно</h2>
-      <p>Не нужно разбираться в сервисах в одиночку. Я провожу вас за руку: звонок, установка, оплата, настройка и показ, как вести систему дальше самим.</p>
-    </article>
   </div>
 </section>
 
@@ -565,15 +604,13 @@
 
 <section class="wow-wrap" id="geo">
   <div class="wrap">
-    <article class="wow">
+    <article class="wow wow-text">
       <div>
-        <p class="kicker">А теперь нейросети</p>
-        <h2>Представьте: Алиса на кухне советует вас</h2>
-        <p>GEO — это продвижение в нейросетях. Человек спрашивает ChatGPT, DeepSeek или Алису — и они рекомендуют вас в ответе.</p>
-        <p>Утром кто-то спрашивает колонку за завтраком, кого выбрать. Это та самая Алиса, которая стоит почти на каждой кухне. И она называет вас.</p>
-        <span class="punch">Вас рекомендуют нейросети и показывают в поиске</span>
+        <p class="kicker">Что такое GEO</p>
+        <h2>Когда человек спрашивает не поиск, а нейросеть</h2>
+        <p>GEO — это продвижение в ответах помощников. Вопрос задают ChatGPT, DeepSeek или голосовому помощнику, и ответ собирается по открытым источникам.</p>
+        <p>Мы готовим сайт и публикации так, чтобы на них можно было опереться в таком ответе — не только в обычной выдаче.</p>
       </div>
-      <img src="img/alice-kitchen.jpg" alt="Утро на кухне: умная колонка рекомендует бизнес, пока человек пьёт чай">
     </article>
   </div>
 </section>
