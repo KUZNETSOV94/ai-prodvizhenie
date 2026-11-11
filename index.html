@@ -303,190 +303,6 @@
     object-position: top;
   }
   figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
-
-  .feed-mini {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin: 0 0 16px;
-  }
-  .feed-mini article {
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 10px 12px 12px;
-    box-shadow: 0 6px 18px rgba(80, 20, 90, .06);
-  }
-  .feed-mini .thumb {
-    height: 64px;
-    border-radius: 10px;
-    margin: 0 0 8px;
-  }
-  .feed-mini .t1 { background: linear-gradient(135deg, #ffe14a, #ff7a18); }
-  .feed-mini .t2 { background: linear-gradient(135deg, #c8f6ec, #1478d4); }
-  .feed-mini .t3 { background: linear-gradient(135deg, #ddd6ff, #e11d74); }
-  .feed-mini p {
-    margin: 0;
-    font-family: Onest, sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.3;
-    color: var(--ink);
-  }
-  .feed-cap { font-size: 13px; color: var(--muted); margin: -6px 0 18px; }
-
-  .mock-shell {
-    background:
-      radial-gradient(500px 180px at 100% 0%, rgba(255,225,74,.28), transparent 55%),
-      linear-gradient(180deg, #f4edff 0%, #fff 40%);
-    border: 2px solid #ddd6ff;
-    border-radius: 24px;
-    padding: 10px 10px 0;
-    box-shadow: var(--shadow);
-  }
-  .mock-scroll {
-    max-height: min(760px, 78vh);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    background: #fff;
-    border-radius: 18px 18px 0 0;
-    padding: 18px 16px 28px;
-    scrollbar-color: #6a27f0 #f0e9ff;
-  }
-  .mock-scroll::-webkit-scrollbar { width: 8px; }
-  .mock-scroll::-webkit-scrollbar-thumb { background: #6a27f0; border-radius: 8px; }
-
-  .anno {
-    display: inline-block;
-    font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: 10px;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 999px;
-    margin: 0 0 8px;
-    line-height: 1.2;
-  }
-  .a-h1 { background: #ffd0e6; color: #9b0b4a; }
-  .a-lead { background: #ddd6ff; color: #3b0f7a; }
-  .a-h2 { background: #c8f6ec; color: #0a6b5c; }
-  .a-h3 { background: #ffd8c2; color: #9a3a00; }
-  .a-img { background: #ffe14a; color: var(--deep); }
-  .a-list { background: #cfe8ff; color: #0a4b8c; }
-  .a-table { background: #e8ffb7; color: #3a5a00; }
-  .a-faq { background: #ddd6ff; color: #3b0f7a; }
-  .a-out { background: #ffd0e6; color: #9b0b4a; }
-  .a-cta { background: var(--yellow); color: var(--deep); }
-  .a-meta { background: #eee9f7; color: #4a3a6a; }
-  .a-schema { background: #cfe8ff; color: #0a4b8c; }
-
-  .unit { margin: 0 0 18px; }
-  .unit p, .unit li { font-size: 15.5px; line-height: 1.5; color: #2a2040; }
-  .mock-h1 {
-    font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: clamp(22px, 4.4vw, 30px);
-    line-height: 1.2;
-    margin: 0;
-    letter-spacing: -.03em;
-  }
-  .mock-h2 {
-    font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    margin: 0 0 8px;
-    letter-spacing: -.02em;
-  }
-  .mock-h3 {
-    font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: 16.5px;
-    margin: 0 0 6px;
-  }
-  .mock-lead { font-size: 17px !important; color: var(--ink) !important; margin: 0; }
-  .mock-img {
-    display: block;
-    width: 100%;
-    border-radius: 16px;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: center;
-    border: 1px solid var(--line);
-  }
-  .mock-list { margin: 0; padding-left: 1.15em; }
-  .mock-list li { margin: 4px 0; }
-  .mock table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-    background: #fff8f2;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-  }
-  .mock th {
-    background: #6a27f0;
-    color: #fff;
-    font-family: Onest, sans-serif;
-    font-size: 12px;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    padding: 8px 10px;
-  }
-  .mock td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-  .mock tr:last-child td { border-bottom: 0; }
-  .faq-item {
-    background: #f6f2ff;
-    border-radius: 12px;
-    padding: 10px 12px;
-    margin: 0 0 8px;
-  }
-  .faq-item p { margin: 0; }
-  .faq-item .q { font-family: Onest, sans-serif; font-weight: 800; margin-bottom: 4px !important; }
-  .mock-cta {
-    display: inline-block;
-    margin-top: 8px;
-    background: var(--violet);
-    color: #fff;
-    font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-    padding: 10px 16px;
-    border-radius: 999px;
-  }
-  .meta-box {
-    background: #f7f5fb;
-    border: 1px dashed #c9bfd8;
-    border-radius: 14px;
-    padding: 12px 14px;
-    margin: 0 0 16px;
-  }
-  .meta-box > .anno { margin: 0 6px 8px 0; }
-  .meta-box .row { margin: 0 0 8px; }
-  .meta-box .row:last-child { margin: 0; }
-  .meta-label { font-family: Onest, sans-serif; font-weight: 700; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-  .meta-box p { margin: 2px 0 0; font-size: 14px; color: var(--ink); }
-
-  @media screen and (max-width: 820px) {
-    .feed-mini { grid-template-columns: 1fr; }
-    .feed-mini article { display: grid; grid-template-columns: 72px 1fr; gap: 10px; align-items: center; }
-    .feed-mini .thumb { height: 52px; margin: 0; }
-  }
-  @media screen and (min-width: 821px) {
-    .mock-scroll { padding: 22px 28px 32px 136px; }
-    .unit { position: relative; }
-    .unit > .anno {
-      position: absolute;
-      left: -124px;
-      top: 2px;
-      width: 112px;
-      text-align: center;
-      margin: 0;
-      white-space: normal;
-    }
-    .meta-box { position: relative; padding-left: 8px; }
-  }
   .platforms {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -592,7 +408,14 @@
     font-size: 13.5px;
     line-height: 1.3;
   }
-  .extra .btn-row { margin-top: 14px; }
+  .extra .extra-cta-label {
+    margin: 14px 0 0;
+    font-family: Onest, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+  }
+  .extra .btn-row { margin-top: 10px; }
   .extra .btn { font-size: 15px; padding: 12px 18px; }
 
   .market { margin: 28px 0 0; }
@@ -731,26 +554,8 @@
     .extra > p { font-size: 10pt; }
     .extra .flag { margin-top: 8px; padding: 5px 10px; font-size: 9.5pt; }
     .extra .chips { margin-top: 8px; }
+    .extra .extra-cta-label { margin-top: 8px; font-size: 10pt; }
     .extra .btn { font-size: 9.5pt; padding: 6px 12px; }
-    .feed-mini { grid-template-columns: 1fr 1fr 1fr !important; margin-bottom: 8px; }
-    .feed-mini .thumb { height: 14mm; }
-    .feed-mini p { font-size: 8pt; }
-    .feed-cap { display: none; }
-    .mock-shell { border-width: 1px; padding: 4px; box-shadow: none; }
-    .mock-scroll { max-height: none !important; overflow: visible !important; padding: 8px 8px 8px 28mm; }
-    .unit { position: relative; break-inside: avoid; margin-bottom: 8px; }
-    .unit > .anno { position: absolute; left: -26mm; top: 1px; width: 24mm; text-align: center; margin: 0; font-size: 7pt; padding: 2px 4px; }
-    .unit p, .unit li { font-size: 9pt; }
-    .mock-h1 { font-size: 14pt; }
-    .mock-h2 { font-size: 11pt; }
-    .mock-h3 { font-size: 10pt; }
-    .mock-img { max-height: 32mm; box-shadow: none; }
-    .mock table { font-size: 8.5pt; }
-    .mock th, .mock td { padding: 4px 6px; }
-    .faq-item { padding: 6px 8px; margin-bottom: 4px; }
-    .mock-cta { font-size: 9pt; padding: 5px 10px; }
-    .meta-box { padding: 6px 8px; margin-bottom: 8px; }
-    .meta-box p { font-size: 8.5pt; }
     .market { margin-top: 10px; }
     .note { margin-top: 6px; font-size: 9pt; }
     .next { break-inside: auto; margin-top: 6px; }
@@ -766,8 +571,8 @@
       <p class="lead">Система продвижения работает за вас 24/7. Клиенты приходят сами&nbsp;— без вашего участия.</p>
       <p class="hero-cta-label">Связаться и обсудить ваш бизнес</p>
       <div class="btn-row hero-cta">
-        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram · @daymeta</a>
-        <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp · +7 983 410-79-35</a>
+        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -949,127 +754,20 @@
 
 <section id="cases">
   <div class="wrap">
-    <p class="kicker" style="color:var(--magenta)">Как пишется статья</p>
-    <h2>Структура, по которой вас находят поиск и нейросети</h2>
+    <p class="kicker" style="color:var(--magenta)">Как это выглядит</p>
+    <h2>Лента и сама статья — на живом примере</h2>
     <div class="callout">
-      <p>Статьи пишутся по структуре, которая нужна поисковикам и нейросетям, чтобы вас понимали и находили. Ниже — длинный макет одной такой статьи: заголовки, лид, разделы, картинки, таблица, список, FAQ и вывод.</p>
+      <p>Напишем для вас статьи со сгенерированными картинками, блоком вопросов и ответов, таблицами и красивыми, понятными разделами — по структуре, которая нужна поисковикам и нейросетям, чтобы вас находили.</p>
     </div>
-    <div class="feed-mini" aria-hidden="true">
-      <article><div class="thumb t1"></div><p>Расписание мастер-классов на выходные</p></article>
-      <article><div class="thumb t2"></div><p>Какую глину выбрать для первых занятий</p></article>
-      <article><div class="thumb t3"></div><p>Как хранить готовые изделия после обжига</p></article>
-    </div>
-    <p class="feed-cap">Так может выглядеть лента материалов — у каждой публикации свой заголовок, без названий каналов и счётчиков.</p>
-
-    <div class="mock-shell">
-      <div class="mock-scroll mock">
-        <div class="meta-box">
-          <span class="anno a-meta">Meta description</span>
-          <span class="anno a-schema">Schema: Article, FAQPage</span>
-          <div class="row">
-            <div class="meta-label">Title</div>
-            <p>Как студии керамики получать заявки на мастер-классы</p>
-          </div>
-          <div class="row">
-            <div class="meta-label">Description</div>
-            <p>Какие страницы и статьи помогают студии керамики приводить людей на мастер-классы из поиска и из ответов нейросетей.</p>
-          </div>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-h1">H1</span>
-          <p class="mock-h1">Как студии керамики получать заявки на мастер-классы из поиска и нейросетей</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-lead">Лид</span>
-          <p class="mock-lead">Когда человек ищет «мастер-класс по керамике рядом» или спрашивает об этом помощника, ответ собирается из понятных страниц и статей. Ниже — рабочая структура такого материала: её можно повторять под разные запросы студии.</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-img">Картинка</span>
-          <img class="mock-img" src="img/articles-spread.jpg" alt="Сгенерированная иллюстрация к статье: публикации и материалы в ярком стиле">
-        </div>
-
-        <div class="unit">
-          <span class="anno a-h2">H2</span>
-          <p class="mock-h2">Что обычно мешает студии быть заметной</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-h3">H3</span>
-          <p class="mock-h3">Почему одной страницы в соцсети недостаточно</p>
-          <p>Короткий пост быстро пропадает в ленте. Если у студии нет материала с ясным заголовком, ответами на частые вопросы и понятным следующим шагом, поиск и нейросети опираться почти не на что.</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-list">Список</span>
-          <ul class="mock-list">
-            <li>В заголовке нет запроса, по которому вас ищут.</li>
-            <li>Нет прямых ответов на типичные вопросы новичков.</li>
-            <li>Материалы не связаны между собой: каждый текст «висит» отдельно.</li>
-          </ul>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-h2">H2</span>
-          <p class="mock-h2">Какой формат статьи работает лучше</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-table">Таблица</span>
-          <table>
-            <thead>
-              <tr>
-                <th>Формат</th>
-                <th>Что даёт</th>
-                <th>Где работает</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Короткий пост</td>
-                <td>Быстрый охват у уже знакомой аудитории</td>
-                <td>Соцсети</td>
-              </tr>
-              <tr>
-                <td>Структурная статья</td>
-                <td>Понятный ответ на запрос, который остаётся в выдаче</td>
-                <td>Поиск и нейросети</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-img">Картинка</span>
-          <img class="mock-img" src="img/semantics.jpg" alt="Сгенерированная иллюстрация: связанные темы и запросы">
-        </div>
-
-        <div class="unit">
-          <span class="anno a-faq">FAQ</span>
-          <p class="mock-h2">Частые вопросы</p>
-          <div class="faq-item">
-            <p class="q">Нужен ли сайт, если уже есть соцсети?</p>
-            <p>Соцсети хорошо держат тёплую аудиторию. Чтобы вас могли найти по запросу и рекомендовать в ответе помощника, нужна ещё и страница, которую можно прочитать целиком — со структурой, как в этом примере.</p>
-          </div>
-          <div class="faq-item">
-            <p class="q">С чего начать, если мастер-классов несколько?</p>
-            <p>С одного ясного запроса и одной статьи под него: формат, для кого, как записаться. Затем ту же структуру можно повторить для других направлений студии.</p>
-          </div>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-out">Вывод</span>
-          <p class="mock-h2">Короткий вывод</p>
-          <p>Если закрыть типовые запросы такой структурой, студию проще найти и проще порекомендовать. Дальше человек должен сразу понять, что делать: выбрать дату и записаться.</p>
-        </div>
-
-        <div class="unit">
-          <span class="anno a-cta">CTA</span>
-          <span class="mock-cta">Записаться на мастер-класс</span>
-        </div>
-      </div>
+    <div class="proofs">
+      <figure>
+        <img src="img/proof_dzen_crop.png" alt="Пример ленты статей: обложки и заголовки, без названия канала и счётчиков">
+        <figcaption>Так выглядит лента статей, например на Дзене</figcaption>
+      </figure>
+      <figure>
+        <img src="img/proof_vc_crop.png" alt="Пример самой статьи: заголовок, обложка и текст, без имени автора">
+        <figcaption>Так выглядит сама статья, например на vc.ru</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -1107,8 +805,9 @@
         <li class="c4">🔗 Любая интеграция</li>
       </ul>
       <p class="flag">Отдельная услуга · стоимость обсуждается</p>
+      <p class="extra-cta-label">Обсудить ваш вопрос</p>
       <div class="btn-row">
-        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Обсудить ваш вопрос · Telegram</a>
+        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram</a>
         <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </article>
@@ -1149,8 +848,8 @@
       <h2>Связаться и обсудить ваш бизнес</h2>
       <p>Напишите в Telegram или WhatsApp — обсудим задачу и запуск.</p>
       <div class="btn-row">
-        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram · @daymeta</a>
-        <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp · +7 983 410-79-35</a>
+        <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-wa" href="https://wa.me/79834107935" target="_blank" rel="noopener">WhatsApp</a>
       </div>
       <p class="hint">Подключаем систему за 100 000 ₽ и показываем, как она работает. Дальше: 10 000 ₽/мес на архитектуру или 20 000 ₽/мес за моё ведение.</p>
     </div>
