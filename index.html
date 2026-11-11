@@ -125,6 +125,37 @@
   .gets h3 { color: var(--ink); margin: 0 0 2px; font-size: clamp(18px, 2.4vw, 22px); }
   .gets p { margin: 0; color: var(--muted); font-size: 15.5px; }
   .gets-section { padding: 36px 0 16px; }
+  .gets-frame {
+    margin: 0 0 14px;
+    font-family: Onest, sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2.2vw, 20px);
+    line-height: 1.35;
+    color: var(--violet);
+    max-width: 28em;
+  }
+  .gets li.hi {
+    background: #fff6c2;
+    border: 2px solid var(--yellow);
+    box-shadow: 0 12px 30px rgba(106, 39, 240, .14);
+    padding: 16px 18px 16px 14px;
+  }
+  .gets li.hi .n { color: var(--magenta); }
+  .gets li.hi h3 { font-size: clamp(19px, 2.6vw, 24px); }
+  .gets li.hi p { color: var(--ink); font-size: 16px; }
+  .gets .hi-tag {
+    display: inline-block;
+    margin: 0 0 6px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--magenta);
+    color: #fff;
+    font-family: Onest, sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
   .auto {
     margin-top: 16px;
     background: var(--yellow);
@@ -506,10 +537,15 @@
     .hero h1 { font-size: 18pt; max-width: none; }
     .hero .lead { font-size: 11pt; margin-bottom: 8px; }
     .gets { gap: 4px; }
-    .gets li { padding: 5px 10px; border-radius: 10px; }
+    .gets li { padding: 5px 10px; border-radius: 10px; break-inside: avoid; }
     .gets .n { font-size: 18pt; }
     .gets h3 { font-size: 11pt; }
     .gets p { font-size: 9pt; }
+    .gets-frame { font-size: 11pt; margin-bottom: 6px; }
+    .gets li.hi { padding: 8px 10px; }
+    .gets li.hi h3 { font-size: 12pt; }
+    .gets li.hi p { font-size: 9.5pt; }
+    .gets .hi-tag { font-size: 7.5pt; padding: 2px 6px; margin-bottom: 3px; }
     .auto { font-size: 12pt; padding: 6px 10px; margin-top: 6px; }
     section.block, section.wow-wrap, #cases, #price { padding: 4.5mm 0; }
     h2 { font-size: 16pt; }
@@ -568,7 +604,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1>Вас будут советовать Яндекс, ChatGPT и даже Алиса на кухне</h1>
-      <p class="lead">Система продвижения работает за вас 24/7. Клиенты приходят сами&nbsp;— без вашего участия.</p>
+      <p class="lead">Универсальная агентская система работает за вас 24/7. Клиенты приходят сами&nbsp;— без вашего участия.</p>
       <p class="hero-cta-label">Связаться и обсудить ваш бизнес</p>
       <div class="btn-row hero-cta">
         <a class="btn btn-tg" href="https://t.me/daymeta" target="_blank" rel="noopener">Telegram</a>
@@ -595,19 +631,21 @@
   <div class="wrap">
     <p class="kicker" style="color:var(--magenta)">Что входит</p>
     <h2>Вот что вы получаете</h2>
+    <p class="gets-frame">Универсальная агентская система, которая встраивается в вашу жизнь и бизнес</p>
     <ol class="gets">
       <li>
         <div class="n">1</div>
         <div>
-          <h3>Полная семантика</h3>
-          <p>Соберём семантическое ядро: запросы, по которым вас будут искать люди и нейросети.</p>
+          <h3>Ведение всех соцсетей</h3>
+          <p>Threads, ВКонтакте и Telegram: автоматические посты, автоописания и сгенерированные изображения.</p>
         </div>
       </li>
-      <li>
+      <li class="hi">
         <div class="n">2</div>
         <div>
-          <h3>Сайт с SEO + GEO</h3>
-          <p>Сделаем или переделаем сайт под поиск и под ответы нейросетей.</p>
+          <p class="hi-tag">Главное</p>
+          <h3>Полностью автоматизированная агентская система</h3>
+          <p>Пишет посты за вас и отвечает людям, отвечает на почту, регистрирует на рейс, бронирует, заказывает еду (Яндекс Лавка), ищет информацию, регистрирует на сервисах и заказывает товары онлайн. Снимает рутину и экономит время в разных сферах жизни и быта.</p>
         </div>
       </li>
       <li>
@@ -620,19 +658,26 @@
       <li>
         <div class="n">4</div>
         <div>
-          <h3>Ведение соцсетей</h3>
-          <p>Threads, ВКонтакте и Telegram: автоматические посты, автоописания и сгенерированные изображения.</p>
+          <h3>Сайт с SEO + GEO</h3>
+          <p>Сделаем или переделаем сайт под поиск и под ответы нейросетей.</p>
         </div>
       </li>
       <li>
         <div class="n">5</div>
+        <div>
+          <h3>Полная семантика</h3>
+          <p>Соберём семантическое ядро: запросы, по которым вас будут искать люди и нейросети.</p>
+        </div>
+      </li>
+      <li>
+        <div class="n">6</div>
         <div>
           <h3>Сразу запускаем на 7 площадок</h3>
           <p>Четыре площадки для статей и посевов плюс три соцсети — система выходит сразу на все каналы.</p>
         </div>
       </li>
       <li>
-        <div class="n">6</div>
+        <div class="n">7</div>
         <div>
           <h3>Сколько угодно площадок сверху</h3>
           <p>Можем добавить платформы и соцсети — столько, сколько нужно именно вам.</p>
