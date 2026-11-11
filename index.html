@@ -134,27 +134,38 @@
     color: var(--violet);
     max-width: 28em;
   }
-  .gets li.hi {
-    background: #fff6c2;
-    border: 2px solid var(--yellow);
-    box-shadow: 0 12px 30px rgba(106, 39, 240, .14);
-    padding: 16px 18px 16px 14px;
+  .glavnoe {
+    margin-top: 18px;
+    background:
+      radial-gradient(500px 180px at 100% 0%, rgba(194, 96, 62, .12), transparent 55%),
+      linear-gradient(165deg, #FBF3EC 0%, #F4E0D4 100%);
+    border: 2px solid #C2603E;
+    border-radius: 24px;
+    padding: 24px 26px;
+    color: #3A2218;
+    box-shadow: 0 12px 28px rgba(122, 52, 32, .10);
   }
-  .gets li.hi .n { color: var(--magenta); }
-  .gets li.hi h3 { font-size: clamp(19px, 2.6vw, 24px); }
-  .gets li.hi p { color: var(--ink); font-size: 16px; }
-  .gets .hi-tag {
-    display: inline-block;
-    margin: 0 0 6px;
-    padding: 3px 8px;
-    border-radius: 999px;
-    background: var(--magenta);
-    color: #fff;
+  .glavnoe h2 {
+    font-size: clamp(26px, 3.6vw, 34px);
+    color: #9A4630;
+    margin: 0 0 8px;
+    letter-spacing: -.03em;
+  }
+  .glavnoe > p { margin: 0; font-size: 17px; color: #3A2218; max-width: 40em; }
+  .glavnoe .chips { margin-top: 14px; }
+  .glavnoe .chips li {
+    background: #fffaf6;
+    border: 1.5px solid #C2603E;
+    color: #5A2E22;
+  }
+  .glavnoe .sum-line {
+    margin: 16px 0 0;
     font-family: Onest, sans-serif;
-    font-weight: 800;
-    font-size: 11px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 1.4;
+    color: #6E3A28;
+    max-width: 36em;
   }
   .auto {
     margin-top: 16px;
@@ -542,10 +553,12 @@
     .gets h3 { font-size: 11pt; }
     .gets p { font-size: 9pt; }
     .gets-frame { font-size: 11pt; margin-bottom: 6px; }
-    .gets li.hi { padding: 8px 10px; }
-    .gets li.hi h3 { font-size: 12pt; }
-    .gets li.hi p { font-size: 9.5pt; }
-    .gets .hi-tag { font-size: 7.5pt; padding: 2px 6px; margin-bottom: 3px; }
+    .glavnoe { break-inside: avoid; margin-top: 8px; padding: 12px 14px; }
+    .glavnoe h2 { font-size: 16pt; }
+    .glavnoe > p { font-size: 10pt; }
+    .glavnoe .sum-line { font-size: 10.5pt; margin-top: 8px; }
+    .glavnoe .chips { margin-top: 8px; }
+    .glavnoe .chips li { padding: 4px 8px; font-size: 8.5pt; }
     .auto { font-size: 12pt; padding: 6px 10px; margin-top: 6px; }
     section.block, section.wow-wrap, #cases, #price { padding: 4.5mm 0; }
     h2 { font-size: 16pt; }
@@ -640,50 +653,58 @@
           <p>Threads, ВКонтакте и Telegram: автоматические посты, автоописания и сгенерированные изображения.</p>
         </div>
       </li>
-      <li class="hi">
-        <div class="n">2</div>
-        <div>
-          <p class="hi-tag">Главное</p>
-          <h3>Полностью автоматизированная агентская система</h3>
-          <p>Пишет посты за вас и отвечает людям, отвечает на почту, регистрирует на рейс, бронирует, заказывает еду (Яндекс Лавка), ищет информацию, регистрирует на сервисах и заказывает товары онлайн. Снимает рутину и экономит время в разных сферах жизни и быта.</p>
-        </div>
-      </li>
       <li>
-        <div class="n">3</div>
+        <div class="n">2</div>
         <div>
           <h3>Статьи и SEO-посевы</h3>
           <p>Пишем и размещаем материалы на Дзене, vc.ru, Teletype и в Живом Журнале.</p>
         </div>
       </li>
       <li>
-        <div class="n">4</div>
+        <div class="n">3</div>
         <div>
           <h3>Сайт с SEO + GEO</h3>
           <p>Сделаем или переделаем сайт под поиск и под ответы нейросетей.</p>
         </div>
       </li>
       <li>
-        <div class="n">5</div>
+        <div class="n">4</div>
         <div>
           <h3>Полная семантика</h3>
           <p>Соберём семантическое ядро: запросы, по которым вас будут искать люди и нейросети.</p>
         </div>
       </li>
       <li>
-        <div class="n">6</div>
+        <div class="n">5</div>
         <div>
           <h3>Сразу запускаем на 7 площадок</h3>
           <p>Четыре площадки для статей и посевов плюс три соцсети — система выходит сразу на все каналы.</p>
         </div>
       </li>
       <li>
-        <div class="n">7</div>
+        <div class="n">6</div>
         <div>
           <h3>Сколько угодно площадок сверху</h3>
           <p>Можем добавить платформы и соцсети — столько, сколько нужно именно вам.</p>
         </div>
       </li>
     </ol>
+
+    <article class="glavnoe">
+      <h2>Главное</h2>
+      <p>Эта система может выполнять такие действия за вас:</p>
+      <ul class="chips">
+        <li>Пишет посты и отвечает людям</li>
+        <li>Отвечает на почту</li>
+        <li>Регистрирует на рейс</li>
+        <li>Бронирует</li>
+        <li>Заказывает еду (Яндекс Лавка)</li>
+        <li>Ищет информацию</li>
+        <li>Регистрирует на сервисах</li>
+        <li>Заказывает товары онлайн</li>
+      </ul>
+      <p class="sum-line">Всё, что придёт вам в голову, система сможет сделать. Всё ограничивается только вашей фантазией.</p>
+    </article>
   </div>
 </section>
 
